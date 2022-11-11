@@ -1,0 +1,2 @@
+reference github repo: 
+https://github.com/ravenusmc/garden_tracker/blob/master/view/footer.php
