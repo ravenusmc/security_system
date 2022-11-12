@@ -5,11 +5,10 @@
 
 <main>
 
-  <div class='title_area'>
-    <h1 class='title font'>Security System</h1>
+  <div class='title-div'>
+    <h1 class='title-font'>Security System</h1>
   </div>
   
-
 </main>
 
 <?php include 'view/footer.php'; ?>

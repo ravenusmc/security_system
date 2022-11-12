@@ -13,3 +13,14 @@ main {
   background-size: cover;
   height: 100vh;
 }
+
+.title-div {
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.title-font {
+  color: white;
+  text-transform: uppercase;
+}

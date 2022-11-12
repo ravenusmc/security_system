@@ -1,2 +1,9 @@
 reference github repo: 
 https://github.com/ravenusmc/garden_tracker/blob/master/view/footer.php
+-this is an OOP repo I believe 
+
+User signup: 
+https://github.com/ravenusmc/capstone/blob/master/admin/user_signup.php
+
+Prison System:
+https://github.com/ravenusmc/prison_system/tree/master/prison_manager

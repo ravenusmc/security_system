@@ -27,10 +27,11 @@
           <a class="nav-link font" href="?action=home">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font" href="?action=CreateRecord">Add Record</a>
+          <!-- <a class="nav-link font" href="?action=login">Login</a> -->
+          <a class="nav-link font" href="controller">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font" href="?action=createPlantPage">Add Plant</a>
+          <a class="nav-link font" href="?action=createPlantPage">Sign Up</a>
         </li>
       </ul>
     </div>
