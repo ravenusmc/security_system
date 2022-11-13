@@ -24,14 +24,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link font" href="?action=home">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link font" href="http://localhost:8888/security_system/">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <!-- <a class="nav-link font" href="?action=login">Login</a> -->
           <a class="nav-link font" href="controller">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font" href="?action=createPlantPage">Sign Up</a>
+          <a class="nav-link font" href="?action=signup">Sign Up</a>
         </li>
       </ul>
     </div>

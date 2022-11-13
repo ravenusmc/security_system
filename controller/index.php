@@ -21,13 +21,16 @@
       }
 	}
 
+  echo $action;
 	//Switch statment to determine which page to go to. 
 switch ($action) {
 	//This case will bring the user to the page that shows all of the prisoners
-	case 'login':
-			include('user_signup.php');
-			break;
-
+  case 'login':
+		include('login.php');
+		break;
+  case 'signup':
+    include('user_signup.php');
+    break;
 }
 
   // if ($allowed) {
