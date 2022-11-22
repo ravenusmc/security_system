@@ -7,7 +7,8 @@
 		public function index() {
 
 			$data = [
-				'title' => 'The Security System'
+				'title' => 'The Security System',
+				'description' => 'A simple security site',
 			];
 
 			$this->view('pages/index', $data);
