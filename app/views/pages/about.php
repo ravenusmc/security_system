@@ -7,7 +7,13 @@
 		<h1 class='title font center'>About Me</h1>
 	</div>
 	<!-- End of Header Area -->
-	
-<h1>About</h1>
+
+		<!-- Start of content area -->
+		<div class='about_content_area'>
+
+<div class='pic_div'>
+	<img src='https://docs.google.com/uc?export=download&id=1h59Jke3NUudzscY9ej0A83Sj7bq9sPta'>
+</div>
+
 
 <?php require APPROOT . "/views/inc/footer.php"; ?>
