@@ -51,5 +51,6 @@
 
 			</div>
 	</div>
+	<!-- End of content area -->
 
 <?php require APPROOT . "/views/inc/footer.php"; ?>
