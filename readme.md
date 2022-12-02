@@ -5,7 +5,7 @@ This project came to me one day when I was working at job and observed a securit
 
 I've not used PHP for a long time - something that I regret so I'm mainly using this project more of a review. I've also not used vanilla JavaScript forever so there's that as well! 
 
-I'll also say that in building this project I'm using a course on PHP from Brad Traversy. I thought it would be a good review with using PHP and I really enjoy his lessons. 
+I'll also say that in building this project I'm using a course on PHP from Brad Traversy. I thought it would be a good review with using PHP and I really enjoy his lessons. The actual Framework is designed by him. 
 
 
 # Getting started
