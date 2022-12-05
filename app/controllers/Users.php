@@ -136,8 +136,8 @@
           $loggedInUser = $this->userModel->login($data['email'], $data['password']);
           if ($loggedInUser) {
             // Create session
-            $this->createUserSession($loggedInUser);
-            die('workd');
+            // $this->createUserSession($loggedInUser);
+            die('Success');
           }else {
             $data['password_err'] = 'Password Incorrect';
             $this->view('users/login', $data);
