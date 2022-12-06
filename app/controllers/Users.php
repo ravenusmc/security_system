@@ -136,7 +136,7 @@
           $loggedInUser = $this->userModel->login($data['email'], $data['password']);
           if ($loggedInUser) {
             // Create session
-            // $this->createUserSession($loggedInUser);
+            $this->createUserSession($loggedInUser);
             die('Success');
           }else {
             $data['password_err'] = 'Password Incorrect';
@@ -160,6 +160,29 @@
         //Load View
         $this->view('users/login', $data);
       }
-    } // End of login method 
+		} // End of login method 
+		
+		public function createUserSession($user) {
+      $_SESSION['user_id'] = $user->id;
+      $_SESSION['email'] = $user->email;
+      $_SESSION['name'] = $user->name;
+      redirect('pages/index');
+		}
+		
+		public function logout() {
+      unset($_session['user_id']);
+      unset($_session['email']);
+      unset($_session['name']);
+      session_destroy();
+      redirect('users/login');
+		}
+		
+		public function isLoggedIn() {
+			if (isset($_SESSION['user_id'])) {
+				return true;
+			}else {
+				return false;
+			}
+		}
 
 	}
