@@ -137,7 +137,7 @@
           if ($loggedInUser) {
             // Create session
             $this->createUserSession($loggedInUser);
-            die('Success');
+            // die('Success');
           }else {
             $data['password_err'] = 'Password Incorrect';
             $this->view('users/login', $data);
@@ -166,7 +166,7 @@
       $_SESSION['user_id'] = $user->id;
       $_SESSION['email'] = $user->email;
       $_SESSION['name'] = $user->name;
-      redirect('pages/index');
+			redirect('home');
 		}
 		
 		public function logout() {
