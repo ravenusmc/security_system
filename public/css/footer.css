@@ -1,5 +1,9 @@
 /* The CSS in this file will be for the footer page. */
 
+a {
+  color: white;
+}
+
 .fa-linkedin, .fa-twitter-square, .fa-pen-square, .fa-github-square {
   color: white;
   margin: 5px;
