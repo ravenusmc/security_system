@@ -12,7 +12,14 @@
 <!-- <h1><?php // echo $data['title']; ?></h1> -->
 
 <section>
-  <p>This site...</p>
+  <p>
+    This site is a basic security system site. I got the idea for it one day when 
+    I briefly worked as a security guard waiting for my federal job to start. There 
+    was this monitor up on the wall that showed all of the buildings on site. If there 
+    was an issue, like a fire alarm, the building that would have the issue would start 
+    to light up.
+  
+  </p>
 </section>
 
 <?php require APPROOT . "/views/inc/footer.php"; ?>
