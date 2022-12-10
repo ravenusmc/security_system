@@ -24,3 +24,8 @@ This file has CSS for the home page
   color: white;
   text-transform: uppercase;
 }
+
+section {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}

@@ -17,8 +17,13 @@
     I briefly worked as a security guard waiting for my federal job to start. There 
     was this monitor up on the wall that showed all of the buildings on site. If there 
     was an issue, like a fire alarm, the building that would have the issue would start 
-    to light up.
-  
+    to light up. I want to recreate a similar thing with this. 
+  </p>
+  <p>
+    The true purpose of this is to build something in PHP again and to use some vanilla 
+    JavaScript. Both of these tools I've not used in quite some time. I've just been doing 
+    so many python and vue.js projects one after another that it may be almost a year since 
+    I've done a PHP project - time really fly's by!
   </p>
 </section>
 
