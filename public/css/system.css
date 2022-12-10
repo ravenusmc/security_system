@@ -1,0 +1,31 @@
+/***********
+This file has CSS for the actual 'security system' page
+***********/
+
+.building-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 50px;
+}
+
+.center-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.building-one {
+	border: 2px solid black;
+	height: 400px;
+
+}
+
+.building-two {
+	border: 2px solid blue;
+	height: 200px;
+}
+
+.building-three {
+	border: 2px solid black;
+	height: 400px;
+}

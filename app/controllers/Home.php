@@ -3,7 +3,12 @@
 	class Home extends Controller {
 
 		public function __construct() {
-			// echo 'PAges Loaded';
+
+			// This ensures that the person has to be logged in. 
+			if(!isLoggedIn()) {
+				redirect('users/login');
+			}
+			
 		}
 
 		public function index() {
