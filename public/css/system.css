@@ -29,3 +29,12 @@ This file has CSS for the actual 'security system' page
 	border: 2px solid black;
 	height: 400px;
 }
+
+.button-section {
+	padding:3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+

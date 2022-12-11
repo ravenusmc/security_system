@@ -1,0 +1,10 @@
+/***********
+This file has CSS for the buttons on the security system
+***********/
+
+.button-look {
+	border-radius: 8px;
+	text-transform: uppercase;
+	background-color: red;
+	border-color: red;
+}
