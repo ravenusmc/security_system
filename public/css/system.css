@@ -2,10 +2,19 @@
 This file has CSS for the actual 'security system' page
 ***********/
 
+.system-page-title {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
 .building-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 50px;
+	display: inline-grid;
+	justify-items: center;
+  align-items: center;
 }
 
 .center-text {
@@ -17,17 +26,21 @@ This file has CSS for the actual 'security system' page
 .building-one {
 	border: 2px solid black;
 	height: 400px;
-
+	width: 300px;
 }
 
 .building-two {
 	border: 2px solid blue;
 	height: 200px;
+	width: 350px;
+	border-radius: 50px;
 }
 
 .building-three {
 	border: 2px solid black;
-	height: 400px;
+	height: 450px;
+	width: 150px;
+	border-radius: 25px;
 }
 
 .button-section {

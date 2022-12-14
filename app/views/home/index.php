@@ -3,6 +3,12 @@
 <link rel='stylesheet' href="<?php echo URLROOT; ?>/css/system.css">
 <link rel='stylesheet' href="<?php echo URLROOT; ?>/css/button.css">
 
+<section>
+	<div>
+		<h1 class='system-page-title'>The Buildings</h1>
+	</div>
+</section>
+
 <section class='building-section'>
 	<div id='building-one' class='building-one center-text'>
 		<h6>Building One</h6>
