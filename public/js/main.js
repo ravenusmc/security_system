@@ -16,7 +16,8 @@
 
 
 function turnOffAlarm(value) {
-	let currentColor = element.style.backgroundColor.slice(0, 5)
+	RGB(255,255,255)
+	let currentColor = element.style.backgroundColor.slice(4, 14)
 	console.log(currentColor)
 	if (value === "one") {
 		let element = document.getElementById("building-one");
