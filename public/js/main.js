@@ -15,19 +15,25 @@
 // 	}, 3000);
 
 
+function checkAlarm(element) {
+	let currentColor = parseInt(element.style.backgroundColor.slice(8, 12))
+	if (currentColor === 255) {
+		alert('No Alarm at building')
+	} else {
+		element.style.backgroundColor = "#FFFFFF";
+	}
+}
+
+
 function turnOffAlarm(value) {
-	RGB(255,255,255)
-	let currentColor = element.style.backgroundColor.slice(4, 14)
-	console.log(currentColor)
 	if (value === "one") {
 		let element = document.getElementById("building-one");
-		// console.log(element.style.backgroundColor[0])			
-		element.style.backgroundColor = "#FFFFFF";
-	}else if (value === "two") {
-		let element = document.getElementById("building-two");			
-		element.style.backgroundColor = "#FFFFFF";
-	}else {
-		let element = document.getElementById("building-three");			
-		element.style.backgroundColor = "#FFFFFF";
+		checkAlarm(element)
+	} else if (value === "two") {
+		let element = document.getElementById("building-two");
+		checkAlarm(element)
+	} else {
+		let element = document.getElementById("building-three");
+		checkAlarm(element)
 	}
 }
