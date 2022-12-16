@@ -15,7 +15,7 @@
 // 	}, 3000);
 
 
-function checkAlarm(element) {
+function checkAlarmOnOff(element) {
 	let currentColor = parseInt(element.style.backgroundColor.slice(8, 12))
 	if (currentColor === 255) {
 		alert('No Alarm at building')
@@ -28,12 +28,12 @@ function checkAlarm(element) {
 function turnOffAlarm(value) {
 	if (value === "one") {
 		let element = document.getElementById("building-one");
-		checkAlarm(element)
+		checkAlarmOnOff(element)
 	} else if (value === "two") {
 		let element = document.getElementById("building-two");
-		checkAlarm(element)
+		checkAlarmOnOff(element)
 	} else {
 		let element = document.getElementById("building-three");
-		checkAlarm(element)
+		checkAlarmOnOff(element)
 	}
 }
