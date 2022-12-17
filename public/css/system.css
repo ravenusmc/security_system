@@ -19,6 +19,7 @@ This file has CSS for the actual 'security system' page
 
 .center-text {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -49,5 +50,9 @@ This file has CSS for the actual 'security system' page
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.alarm-text {
+	display: none;
 }
 

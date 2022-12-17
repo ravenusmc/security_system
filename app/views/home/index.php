@@ -11,13 +11,16 @@
 
 <section class='building-section'>
 	<div id='building-one' class='building-one center-text'>
-		<h6>Building One</h6>
+		<h5>Building One</h5>
+		<h6 id='alarm-text-one' class='alarm-text'>Alarm Active</h6>
 	</div>
 	<div id='building-two' class='building-two center-text'>
-		<h6>Building Two</h6>
+		<h5>Building Two</h5>
+		<h6 id='alarm-text-two' class='alarm-text'>Alarm Active</h6>
 	</div>
 	<div id='building-three' class='building-three center-text'>
-		<h6>Building Three</h6>
+		<h5>Building Three</h5>
+		<h6 id='alarm-text-three' class='alarm-text'>Alarm Active</h6>
 	</div>
 </section>
 
