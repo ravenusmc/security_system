@@ -5,6 +5,11 @@ This file has CSS for the buttons on the security system main page
 .button-look {
 	border-radius: 8px;
 	text-transform: uppercase;
-	background-color: red;
-	border-color: red;
+	background-color:#2D92E5;
+	border-color: #2D92E5;
+}
+
+.button-armed {
+	/* background-color: #FF0000; */
+	border-color: #FF0000;
 }

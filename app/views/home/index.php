@@ -6,6 +6,7 @@
 <section>
 	<div>
 		<h1 class='system-page-title'>The Buildings</h1>
+		<button class='button-look'>Turn On Alarm</button>
 	</div>
 </section>
 
@@ -26,13 +27,13 @@
 
 <section class='button-section'>
 	<div>
-		<button class='button-look' onclick="turnOffAlarm('one')">Turn Off Alarm - 1</button>
+		<button id='button-one' class='button-look' onclick="turnOffAlarm('one')">Turn Off Alarm - 1</button>
 	</div>
 	<div>
-		<button class='button-look' onclick="turnOffAlarm('two')">Turn Off Alarm - 2</button>
+		<button id='button-two' class='button-look' onclick="turnOffAlarm('two')">Turn Off Alarm - 2</button>
 	</div>
 	<div>
-		<button class='button-look' onclick="turnOffAlarm('three')">Turn Off Alarm - 3</button>
+		<button id='button-three' class='button-look' onclick="turnOffAlarm('three')">Turn Off Alarm - 3</button>
 	</div>
 </section>
 

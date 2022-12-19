@@ -9,12 +9,11 @@ This file has CSS for the actual 'security system' page
 }
 
 .building-section {
-	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 50px;
 	display: inline-grid;
 	justify-items: center;
-  align-items: center;
+	align-items: center;
 }
 
 .center-text {
@@ -31,17 +30,17 @@ This file has CSS for the actual 'security system' page
 }
 
 .building-two {
-	border: 2px solid blue;
+	border: 2px solid black;
 	height: 200px;
 	width: 350px;
-	border-radius: 50px;
+	border-radius: 10px;
 }
 
 .building-three {
 	border: 2px solid black;
 	height: 450px;
 	width: 150px;
-	border-radius: 25px;
+	border-radius: 12px;
 }
 
 .button-section {

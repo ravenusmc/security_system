@@ -1,3 +1,5 @@
+// Need to add a button to turn on and off alarm
+
 function showAlarmText(element) {
 	let selectedBuilding = element.id
 	if (selectedBuilding === 'building-one') {
@@ -12,23 +14,31 @@ function showAlarmText(element) {
 	}
 };
 
+function showFlashingButton(element) {
+	console.log(element.id)
+}
+
 // setInterval(
 // 	function(){
 // 			let randomNumber = Math.floor((Math.random() * 3) + 1);
 // 			if (randomNumber === 1){
 // 				let element = document.getElementById("building-one");
 // 				showAlarmText(element)
+// 				showFlashingButton(element)
 // 				element.style.backgroundColor = "#FF0000";
 // 			}else if (randomNumber ===2){
 // 				let element = document.getElementById("building-two");
 // 				showAlarmText(element)
+// 				showFlashingButton(element)
 // 				element.style.backgroundColor = "#FF0000";
 // 			} else {
 // 				let element = document.getElementById("building-three");
 // 				showAlarmText(element)
+// 				showFlashingButton(element)
 // 				element.style.backgroundColor = "#FF0000";
 // 			}
-// 	}, 5000);
+// 	}, 3000);
+
 
 function hideAlarmText(element) {
 	let selectedBuilding = element.id
@@ -68,3 +78,22 @@ function turnOffAlarm(value) {
 				hideAlarmText(element)
 	}
 }
+
+// function blink(btn) {
+// 	blink1(btn);
+// }
+// function blink1(btn1) {
+// 	//document.getElementById(btn1).className = ;
+// 	btn1.removeClass();
+// 	btn1.addClass("highlight");
+// 	setTimeout(function () { blink2(btn1); }, 750);
+// }
+
+// function blink2(btn2) {
+// 	//document.getElementById(btn2).className = "highlighted";
+// 	btn2.removeClass();
+// 	btn2.addClass("highlighted");
+// 	setTimeout(function () { blink1(btn2); }, 750);
+// }
+
+// blink($('#btn'));
