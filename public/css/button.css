@@ -2,6 +2,13 @@
 This file has CSS for the buttons on the security system main page 
 ***********/
 
+/* This CSS deals with the buttons that arm the system */
+.hide-button {
+	display: none;
+}
+
+/* This CSS deals with the buttons that turn off the alarm on a building */
+
 .button-look {
 	border-radius: 8px;
 	text-transform: uppercase;

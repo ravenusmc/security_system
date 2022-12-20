@@ -1,4 +1,34 @@
 // Need to add a button to turn on and off alarm
+let alarmSystemActive = false; 
+
+function ActivateAlarmSystem() {
+	alarmSystemActive = true;
+	if (alarmSystemActive) {
+		console.log('Active')
+		setInterval(
+			function(){
+					let randomNumber = Math.floor((Math.random() * 3) + 1);
+					if (randomNumber === 1){
+						let element = document.getElementById("building-one");
+						showAlarmText(element)
+						showFlashingButton(element)
+						element.style.backgroundColor = "#FF0000";
+					}else if (randomNumber ===2){
+						let element = document.getElementById("building-two");
+						showAlarmText(element)
+						showFlashingButton(element)
+						element.style.backgroundColor = "#FF0000";
+					} else {
+						let element = document.getElementById("building-three");
+						showAlarmText(element)
+						showFlashingButton(element)
+						element.style.backgroundColor = "#FF0000";
+					}
+			}, 2000);
+			let buttonElement = document.getElementById("disable-alarm");
+			buttonElement.style.display = 'block';
+	}
+}
 
 function showAlarmText(element) {
 	let selectedBuilding = element.id
@@ -37,7 +67,7 @@ function showFlashingButton(element) {
 // 				showFlashingButton(element)
 // 				element.style.backgroundColor = "#FF0000";
 // 			}
-// 	}, 3000);
+// 	}, 2000);
 
 
 function hideAlarmText(element) {

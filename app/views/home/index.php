@@ -6,7 +6,8 @@
 <section>
 	<div>
 		<h1 class='system-page-title'>The Buildings</h1>
-		<button class='button-look'>Turn On Alarm</button>
+		<button class='button-look' onclick="ActivateAlarmSystem()">Turn On Alarm</button>
+		<button id='disable-alarm' class='button-look hide-button' onclick="DeactivateAlarmSystem()">Turn Off Alarm</button>
 	</div>
 </section>
 
