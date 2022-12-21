@@ -2,6 +2,13 @@
 This file has CSS for the actual 'security system' page
 ***********/
 
+.title-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .system-page-title {
 	text-align: center;
 	text-transform: uppercase;
