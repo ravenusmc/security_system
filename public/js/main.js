@@ -53,7 +53,20 @@ function showAlarmText(element) {
 };
 
 function showFlashingButton(element) {
-	console.log(element.id)
+	if (element.id === 'building-one') {
+		document.getElementById('button-one').className = ;
+		// 	btn1.removeClass();
+// 	btn1.addClass("highlight");
+		let textElement = document.getElementById("alarm-text-one");
+		textElement.style.display = 'none';
+	} else if (element.id === 'building-two') {
+		let textElement = document.getElementById("alarm-text-two");
+		textElement.style.display = 'none';
+	} else {
+		let textElement = document.getElementById("alarm-text-three");
+		textElement.style.display = 'none';
+	}
+	
 }
 
 function hideAlarmText(element) {
