@@ -1,4 +1,4 @@
-// Need to make buttons blink that alarm is active 
+// Need to make button flashing turn off
 
 // Declaring Variables
 let alarmSystemActive = true;
@@ -52,19 +52,34 @@ function showAlarmText(element) {
 	}
 };
 
+function blinkOne(targetButton) {
+	targetButton.classList.remove("button-look");
+	targetButton.classList.add("button-armed");
+	setTimeout(function () { blinkTwo(targetButton); }, 750);
+}
+
+function blinkTwo(targetButton) {
+	targetButton.classList.remove("button-armed");
+	targetButton.classList.add("button-look");
+	setTimeout(function () { blinkOne(targetButton); }, 750);
+}
+
 function showFlashingButton(element) {
 	if (element.id === 'building-one') {
 		let textElement = document.getElementById("alarm-text-one");
 		textElement.style.display = 'none';
 		let targetButton = document.getElementById('button-one');
-		targetButton.removeClass();
-		targetButton.addClass("button-armed");
+		blinkOne(targetButton)
 	} else if (element.id === 'building-two') {
 		let textElement = document.getElementById("alarm-text-two");
 		textElement.style.display = 'none';
+		let targetButton = document.getElementById('button-two');
+		blinkOne(targetButton)
 	} else {
 		let textElement = document.getElementById("alarm-text-three");
 		textElement.style.display = 'none';
+		let targetButton = document.getElementById('button-three');
+		blinkOne(targetButton)
 	}
 	
 }
