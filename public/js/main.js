@@ -3,6 +3,7 @@
 // Declaring Variables
 let alarmSystemActive = true;
 let intervalTimer = '';
+let flashingButtonTimer = '';
 
 // Functions 
 function intervalFunction() {
@@ -55,13 +56,13 @@ function showAlarmText(element) {
 function blinkOne(targetButton) {
 	targetButton.classList.remove("button-look");
 	targetButton.classList.add("button-armed");
-	setTimeout(function () { blinkTwo(targetButton); }, 750);
+	setTimeout(function () { blinkTwo(targetButton); }, 1000);
 }
 
 function blinkTwo(targetButton) {
 	targetButton.classList.remove("button-armed");
 	targetButton.classList.add("button-look");
-	setTimeout(function () { blinkOne(targetButton); }, 750);
+	setTimeout(function () { blinkOne(targetButton); }, 1000);
 }
 
 function showFlashingButton(element) {
@@ -123,21 +124,3 @@ function turnOffAlarm(value) {
 	}
 }
 
-// function blink(btn) {
-// 	blink1(btn);
-// }
-// function blink1(btn1) {
-// 	//document.getElementById(btn1).className = ;
-// 	btn1.removeClass();
-// 	btn1.addClass("highlight");
-// 	setTimeout(function () { blink2(btn1); }, 750);
-// }
-
-// function blink2(btn2) {
-// 	//document.getElementById(btn2).className = "highlighted";
-// 	btn2.removeClass();
-// 	btn2.addClass("highlighted");
-// 	setTimeout(function () { blink1(btn2); }, 750);
-// }
-
-// blink($('#btn'));
