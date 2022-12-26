@@ -1,4 +1,4 @@
-// Need to make button flashing turn off
+// Need to set ID for different buttons on settimeout 
 
 // Declaring Variables
 let alarmSystemActive = true;
@@ -56,13 +56,13 @@ function showAlarmText(element) {
 function blinkOne(targetButton) {
 	targetButton.classList.remove("button-look");
 	targetButton.classList.add("button-armed");
-	setTimeout(function () { blinkTwo(targetButton); }, 1000);
+	flashingButtonTimer = setTimeout(function () { blinkTwo(targetButton); }, 1000);
 }
 
 function blinkTwo(targetButton) {
 	targetButton.classList.remove("button-armed");
 	targetButton.classList.add("button-look");
-	setTimeout(function () { blinkOne(targetButton); }, 1000);
+	flashingButtonTimer = setTimeout(function () { blinkOne(targetButton); }, 1000);
 }
 
 function showFlashingButton(element) {
@@ -82,7 +82,29 @@ function showFlashingButton(element) {
 		let targetButton = document.getElementById('button-three');
 		blinkOne(targetButton)
 	}
-	
+}
+
+function stopFlashingButton(element) {
+	if (element.id === 'building-one') {
+		let targetButton = document.getElementById('button-three');
+		targetButton.classList.remove("button-armed");
+		targetButton.classList.add("button-look");
+		console.log('Before')
+		console.log(flashingButtonTimer)
+		clearTimeout(flashingButtonTimer);
+		console.log('After')
+		console.log(flashingButtonTimer)
+	} else if (element.id === 'building-two') {
+		let targetButton = document.getElementById('button-three');
+		targetButton.classList.remove("button-armed");
+		targetButton.classList.add("button-look");
+		clearTimeout(flashingButtonTimer);
+	} else {
+		let targetButton = document.getElementById('button-three');
+		targetButton.classList.remove("button-armed");
+		targetButton.classList.add("button-look");
+		clearTimeout(flashingButtonTimer);
+	}
 }
 
 function hideAlarmText(element) {
@@ -113,14 +135,17 @@ function turnOffAlarm(value) {
 		let element = document.getElementById("building-one");
 		checkAlarmOnOff(element)
 		hideAlarmText(element)
+		stopFlashingButton(element)
 	} else if (value === "two") {
 		let element = document.getElementById("building-two");
 		checkAlarmOnOff(element)
 		hideAlarmText(element)
+		stopFlashingButton(element)
 	} else {
 		let element = document.getElementById("building-three");
 		checkAlarmOnOff(element)
 		hideAlarmText(element)
+		stopFlashingButton(element)
 	}
 }
 
