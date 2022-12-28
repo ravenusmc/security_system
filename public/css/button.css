@@ -17,6 +17,8 @@ This file has CSS for the buttons on the security system main page
 }
 
 .button-armed {
+	border-radius: 8px;
+	text-transform: uppercase;
 	background-color: #FF0000;
 	border-color: #FF0000;
 }

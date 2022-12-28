@@ -1,16 +1,20 @@
 // Need to set ID for different buttons on settimeout 
 // Reference: https://www.w3schools.com/jsref/met_win_cleartimeout.asp
 
-// Declaring Variables
+// Declaring Global Variables
 let alarmSystemActive = true;
 let intervalTimer = '';
 let flashingButtonTimerOne = '';
+let flashingButtonTimerOneB  = '';
 let flashingButtonTimerTwo = '';
+let flashingButtonTimerTwoB = '';
 let flashingButtonTimerThree = '';
+let flashingButtonTimerThreeB = '';
 
 // Functions 
 function intervalFunction() {
 	let randomNumber = Math.floor((Math.random() * 3) + 1);
+	// let randomNumber = 1;
 	if (randomNumber === 1) {
 		let element = document.getElementById("building-one");
 		showAlarmText(element)
@@ -60,10 +64,8 @@ function blinkOne(targetButton) {
 	// targetButton.classList.remove("button-look");
 	// targetButton.classList.add("button-armed");
 	if (targetButton.id == 'button-one') {
-		console.log('HI')
 		targetButton.classList.remove("button-look");
 		targetButton.classList.add("button-armed");
-		console.log(targetButton)
 		flashingButtonTimerOne = setTimeout(function () { blinkTwo(targetButton); }, 1000); 
 	}	else if (targetButton.id == 'button-two') {
 		targetButton.classList.remove("button-look");
@@ -78,19 +80,17 @@ function blinkOne(targetButton) {
 
 function blinkTwo(targetButton) {
 	if (targetButton.id == 'button-one') {
-		console.log('--------------')
-		console.log(targetButton)
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
-		flashingButtonTimerOne = setTimeout(function () { blinkOne(targetButton); }, 1000); 
+		flashingButtonTimerOneB = setTimeout(function () { blinkOne(targetButton); }, 1000); 
 	}	else if (targetButton.id == 'button-two') {
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
-		flashingButtonTimerTwo = setTimeout(function () { blinkOne(targetButton); }, 1000); 
+		flashingButtonTimerTwoB = setTimeout(function () { blinkOne(targetButton); }, 1000); 
 	} else {
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
-		flashingButtonTimerThree = setTimeout(function () { blinkOne(targetButton); }, 1000);
+		flashingButtonTimerThreeB = setTimeout(function () { blinkOne(targetButton); }, 1000);
 	}
 }
 
@@ -115,23 +115,28 @@ function showFlashingButton(element) {
 
 function stopFlashingButton(element) {
 	if (element.id === 'building-one') {
-		let targetButton = document.getElementById('button-three');
+		let targetButton = document.getElementById('button-one');
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
+		// debugger;
 		clearTimeout(flashingButtonTimerOne);
+		clearTimeout(flashingButtonTimerOneB);
 		flashingButtonTimerOne = '';
+		flashingButtonTimerOneB = '';
 	} else if (element.id === 'building-two') {
-		let targetButton = document.getElementById('button-three');
+		let targetButton = document.getElementById('button-two');
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
 		clearTimeout(flashingButtonTimerTwo);
-		flashingButtonTimerTwo = '';
+		clearTimeout(flashingButtonTimerTwoB);
+		// flashingButtonTimerTwo = '';
 	} else {
 		let targetButton = document.getElementById('button-three');
 		targetButton.classList.remove("button-armed");
 		targetButton.classList.add("button-look");
 		clearTimeout(flashingButtonTimerThree);
-		flashingButtonTimerThree = '';
+		clearTimeout(flashingButtonTimerThreeB);
+		// flashingButtonTimerThree = '';
 	}
 }
 
