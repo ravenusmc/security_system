@@ -38,4 +38,6 @@
 </section>
 
 <?php require APPROOT . "/views/inc/footer.php"; ?>
-<script src="<?php echo URLROOT; ?>/js/main.js"></script>
+<script src="<?php echo URLROOT; ?>/js/global.js"></script>
+<script src="<?php echo URLROOT; ?>/js/alarmControl.js"></script>
+<script src="<?php echo URLROOT; ?>/js/buttonControl.js"></script>
