@@ -1,3 +1,5 @@
+// This file will hold the global variables for the alarm system. 
+
 // Declaring Global Variables
 let alarmSystemActive = true;
 let intervalTimer = '';
