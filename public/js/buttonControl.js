@@ -1,19 +1,7 @@
 // This file deals with the buttons that turn off the alarms on for each 
 // of the buildings. 
 
-function showAlarmText(element) {
-		let selectedBuilding = element.id
-		if (selectedBuilding === 'building-one') {
-			let textElement = document.getElementById("alarm-text-one");
-			textElement.style.display = 'block';
-		} else if (selectedBuilding === 'building-two') {
-			let textElement = document.getElementById("alarm-text-two");
-			textElement.style.display = 'block';
-		} else {
-			let textElement = document.getElementById("alarm-text-three");
-			textElement.style.display = 'block';
-		}
-	};
+
 	
 	function blinkOne(targetButton) {
 		if (targetButton.id == 'button-one') {
@@ -46,25 +34,7 @@ function showAlarmText(element) {
 			flashingButtonTimerThreeB = setTimeout(function () { blinkOne(targetButton); }, 1000);
 		}
 	}
-	
-	function showFlashingButton(element) {
-		if (element.id === 'building-one') {
-			let textElement = document.getElementById("alarm-text-one");
-			textElement.style.display = 'none';
-			let targetButton = document.getElementById('button-one');
-			blinkOne(targetButton)
-		} else if (element.id === 'building-two') {
-			let textElement = document.getElementById("alarm-text-two");
-			textElement.style.display = 'none';
-			let targetButton = document.getElementById('button-two');
-			blinkOne(targetButton)
-		} else {
-			let textElement = document.getElementById("alarm-text-three");
-			textElement.style.display = 'none';
-			let targetButton = document.getElementById('button-three');
-			blinkOne(targetButton)
-		}
-	}
+
 	
 	function stopFlashingButton(element) {
 		if (element.id === 'building-one') {
