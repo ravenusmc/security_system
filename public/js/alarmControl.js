@@ -16,15 +16,12 @@ function showAlarmText(element) {
 
 function showFlashingButton(element) {
 	if (element.id === 'building-one') {
-		let textElement = document.getElementById("alarm-text-one");
 		let targetButton = document.getElementById('button-one');
 		blinkOne(targetButton)
 	} else if (element.id === 'building-two') {
-		let textElement = document.getElementById("alarm-text-two");
 		let targetButton = document.getElementById('button-two');
 		blinkOne(targetButton)
 	} else {
-		let textElement = document.getElementById("alarm-text-three");
 		let targetButton = document.getElementById('button-three');
 		blinkOne(targetButton)
 	}
