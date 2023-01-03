@@ -7,6 +7,8 @@ I've not used PHP for a long time - something that I regret so I'm mainly using 
 
 I'll also say that in building this project I'm using a course on PHP from Brad Traversy. I thought it would be a good review with using PHP and I really enjoy his lessons. The actual Framework is designed by him. 
 
+This simple project is now complete. 
+
 
 # Getting started
 ### Installing
